@@ -9,8 +9,9 @@ url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&disp
 }
 
 :root {
-  --primary-color: #FF7613;
-  --text-color: #988775;
+  --primary-color: #FD8D30;
+  --secondary-color:  #fdf0e5;
+  --text-color: #a3998e;
 }
 
 html {
@@ -18,11 +19,10 @@ html {
 }
 
 body {
-  
   font-family: Lato, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: #1d1d1d;
 }
 
 /* common styles */
@@ -35,15 +35,39 @@ a {
   color: white;
 }
 
-/* layout */
+p {
+  color: var(--text-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;  
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
 
 .container {
   max-width: 1000px;
   width: 90%;
   margin: auto;
   display: grid;
+  margin-top: 3rem;
   padding: 5rem;
   background: #070707;
+  border-radius: 3px;
+  box-shadow: 0px 0px 50px 1px #5c5c5c;;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }
@@ -63,7 +87,6 @@ a {
   margin-bottom: 2rem;
 }
 
-/* profile */
 .profileContainer {
   display: flex;
   gap: 2rem
@@ -71,13 +94,84 @@ a {
 
 .profileImg {
   max-width: 250px;
+  margin-right: 20px;
+}
+
+.profilePicture {
+  border-radius: 0 50%;
+  box-shadow: -3px 0px 5px #ffebdb;
 }
 
 .profileNameFirstName {
   color: white;
-  font-weight: 200px;
-  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 100;
+  font-size: clamp(0.5rem, 7vw, 4rem);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
 }
 
+.profileNameLastName {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(0.5rem, 13vw, 7rem);
+  text-transform: uppercase;
+  display: block;
+}
 
+.profileTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--secondary-color); 
+}
 
+.downloadBtn {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #FD8D30;
+  margin: 20px;
+  transition: 
+    opacity 1s,
+    color 1s,
+    background-color 0.5s;
+}
+
+.downloadBtn:hover {
+  background-color: #242424;
+  color: #FD8D30;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+}
+
+li {
+  margin-top: 5px;
+}
+
+.skillList {
+  margin-top: 1rem;;
+  margin-left: 3rem;
+}
+
+.icon {
+  width: 30px;
+  margin: 15px;
+  opacity: .5;
+  transition: .5s;
+}
+
+.icon:hover {
+  opacity: 1;
+
+}
