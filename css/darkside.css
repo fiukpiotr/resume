@@ -9,9 +9,10 @@ url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&disp
 }
 
 :root {
-  --primary-color: #75B2A2;
-  --secondary-color:  #fdf0e5;
-  --text-color: #F1E2DF;
+  --primary-color: #FF6201;
+  --secondary-color:  #2C6E49;
+  --third-color: #bb6530;
+  --text-color: #633f28;
 
 }
 
@@ -23,7 +24,7 @@ body {
   font-family: Lato, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #BC264B;
+  background-color: #0d0d0d;
 }
 
 /* common styles */
@@ -50,7 +51,8 @@ h1 {
 }
 
 h2 {
-  margin-top: 15px;
+    color: var(--third-color);
+    margin-top: 15px;
 }
 
 .description {
@@ -69,9 +71,9 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 7rem;
-  background: #486d5b;
+  background: #141414;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px 1px #FDE12D;;
+  box-shadow: 0px 0px 10px 1px #3c3c3c;;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }
@@ -118,7 +120,7 @@ h2 {
 
 .profilePicture {
   border-radius: 0 50%;
-  box-shadow: -3px 0px 5px #BC264B;
+  box-shadow: -3px 0px 5px #3c3c3c;
 
 }
 
@@ -171,41 +173,40 @@ h2 {
 }
 
 .switchModeBtnContainer {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  align-items: end;
-  top: 30px;
-  right: 30px;
-
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: end;
+    top: 30px;
+    right: 30px;  
 }
 
 .switchModeBtn {
-  color: var(--secondary-color);
-  cursor: pointer;
-  display: inline;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 7px;
-  background-color: #000000;
-  transition: 
-    opacity 1s,
-    color 1s,
-    background-color 0.5s;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #d6dbdb;
+    transition: 
+      opacity 1s,
+      color 1s,
+      background-color 0.5s;
 }
-
+  
 .switchModeBtn:hover {
-  background-color: #242424;
-  color: var(--secondary-color);
-  opacity: 0.6;
+background-color: #8c8c8c;
+color: #ffffff;
+opacity: 0.6;
 }
 
 .flag {
-  width: 1.4rem;
+    width: 1.4rem;
 }
 
 li {
