@@ -53,8 +53,8 @@
 
     p {
         color: var(--text-color);
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         font-weight: 400;  
     }
 
@@ -169,7 +169,6 @@
     .contact {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
     }
 
     .contact-info {
@@ -181,9 +180,7 @@
 
     .icon {
         width: 30px;
-        margin: 15px;
-        opacity: 1;
-        transition: .5s;
+        margin-right: 15px;
     }
 
     .iconProfileName {
@@ -192,19 +189,23 @@
         margin-top: 5px;
     }
 
-
     .responsibilities {
         margin-left: 15px;
     }
 
     .experienceHeader {
-        margin-top: 50px;
+        margin-top: 70px;
+    }
+
+    .group2 {
+        padding-top: 50px;
     }
 
     .footer {
         width: 100%;
         max-width: 1000px;
         margin: 0 auto;
+        margin-top: 140px;
         padding: 20px;
         text-align: center;
     }
