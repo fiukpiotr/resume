@@ -118,7 +118,7 @@ h2 {
 
 .profilePicture {
   border-radius: 0 50%;
-  box-shadow: 5px -5px 5px #360612;
+  box-shadow: 5px -5px 5px #8a8788;
 
 }
 
@@ -256,14 +256,14 @@ a> .icon:hover {
 }
 
 .tooltiptext {
-  font-size: 11px;
+  font-size: 13px;
   visibility: hidden;
   color: var(--secondary-color);
   text-align: center;
   border-radius: 10px;
-  padding: 3px 5px;
+  padding: 5px 10px;
   position: absolute;
-  left: -20px;
+  left: -25px;
   transform: translateX(-50%);
   top: 20px;
   z-index: 1;

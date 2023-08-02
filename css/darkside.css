@@ -10,9 +10,9 @@ url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&disp
 
 :root {
   --primary-color: #FF6201;
-  --secondary-color:  #2C6E49;
-  --third-color: #bb6530;
-  --text-color: #633f28;
+  --secondary-color:  #b9d6c5;
+  --third-color: #b9d6c5;
+  --text-color: #b9d6c5;
 
 }
 
@@ -120,8 +120,7 @@ h2 {
 
 .profilePicture {
   border-radius: 0 50%;
-  box-shadow: -3px 0px 5px #3c3c3c;
-
+  box-shadow: 5px -5px 5px #404040;
 }
 
 .profileNameFirstName {
@@ -192,7 +191,7 @@ h2 {
     padding: 10px 15px;
     border: none;
     border-radius: 7px;
-    background-color: #d6dbdb;
+    background-color: #1e2f2a;
     transition: 
       opacity 1s,
       color 1s,
@@ -200,7 +199,7 @@ h2 {
 }
   
 .switchModeBtn:hover {
-background-color: #8c8c8c;
+background-color: #02140f;
 color: #ffffff;
 opacity: 0.6;
 }
@@ -246,10 +245,6 @@ a> .icon:hover {
 
 .iconProfileName {
   font-size: 15px;
-  opacity: 0.3;
-  display: block;
-  text-align: center;
-  margin-top: 5px;
 }
 
 .tooltip {
@@ -258,26 +253,28 @@ a> .icon:hover {
 }
 
 .tooltiptext {
-  font-size: 11px;
+  font-size: 13px;
   visibility: hidden;
-  background-color: rgb(188, 125, 37);
-  color: #fff;
+  color: #b9d6c5;
   text-align: center;
   border-radius: 10px;
-  padding: 3px 5px;
+  padding: 5px 10px;
   position: absolute;
-  left: 50%;
+  left: -25px;
   transform: translateX(-50%);
-  top: -15px;
+  top: 20px;
   z-index: 1;
   opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s;
+  transition:
+    visibility 0.5s, 
+    opacity 0.5s,
+    background-color .5s;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-  background-color: rgb(253, 125225, 45, 0.5);;
+  background-color: rgba(46, 42, 7, 0.5);;
 }
 
 
@@ -295,7 +292,8 @@ hr {
   grid-column: 1 / -1;
   width: 80%;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 300px;
+  margin-bottom: 50px;
   border: none;
   border-top: 2px solid rgba(128, 128, 128, 0.5);
 }
