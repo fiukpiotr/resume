@@ -336,7 +336,5 @@ hr {
   .container {
     flex-direction: column;
   }
-  hr {
-    margin: 0 auto;
-  }
+
 }
