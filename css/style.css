@@ -1,4 +1,4 @@
-
+/* ROOT */
 @import
 url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
@@ -26,11 +26,7 @@ body {
   background-color: #6d565c;
 }
 
-/* common styles */
-img {
-  width: 100%;
-}
-
+/* COMMON STYLES */
 a {
   text-decoration: none;
   color: #25001b;
@@ -53,127 +49,11 @@ h2 {
   margin-top: 15px;
 }
 
-.description {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--secondary-color);
+li {
+  margin-top: 5px;
 }
 
-
-.container {
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  display: grid;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding: 7rem;
-  background: #b2cdc0;
-  border-radius: 3px;
-  box-shadow: 0px 0px 5px 1px #F1E2DF;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-@media only screen and (max-width: 768px) {
-
-  .container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 3rem;
-    gap: 7rem;
-  }
-
-}
-
-.profile {
-  grid-column: 1 / -1;
-  margin-bottom: 2rem;
-}
-
-.group1 {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.group3 {
-  display: grid;
-  grid-column: 1 / -1;
-  margin-top: 15rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-items: center;
-}
-
-.profileContainer {
-  display: flex;
-  gap: 2rem
-}
-
-.profileImgContainer {
-  max-width: 250px;
-  margin-right: 20px;
-}
-
-.profilePicture {
-  border-radius: 50% 50%;
-  box-shadow: 5px -5px 5px #8a8788;
-
-}
-
-.profileNameFirstName {
-  color: var(--secondary-color);
-  font-weight: 100;
-  font-size: clamp(0.5rem, 7vw, 4rem);
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: -0.8rem;
-}
-
-.profileNameLastName {
-  color: var(--secondary-color);
-  font-weight: 700;
-  font-size: clamp(0.5rem, 13vw, 7rem);
-  text-transform: uppercase;
-  display: block;
-}
-
-.accent {
-  color: var(--primary-color)
-}
-
-.profileTitle {
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--secondary-color); 
-}
-
-.downloadBtn {
-  cursor: pointer;
-  display: inline;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  margin-top: 8rem;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 7px;
-  background-color: #FDE12D;
-  margin: 20px;
-  transition: 
-    opacity 1s,
-    color 1s,
-    background-color 0.5s;
-}
-
-.downloadBtn:hover {
-  background-color: #242424;
-  color: #FDE12D;
-  opacity: 0.6;
-}
-
+/* CHANGE MOOD + LANGUAGE BUTTONS */
 .switchModeBtnContainer {
   display: flex;
   flex-direction: column;
@@ -181,7 +61,6 @@ h2 {
   align-items: end;
   top: 30px;
   right: 30px;
-
 }
 
 .switchModeBtn {
@@ -207,82 +86,197 @@ h2 {
   color: var(--secondary-color);
   opacity: 0.6;
 }
-
+/* flag image */
 .switchModeBtn img {
   width: 1.4rem;
 }
 
-li {
-  margin-top: 5px;
-}
-
-.skillList {
-  margin-top: 1rem;;
-  margin-left: 3rem;
-}
-
-.contact {
+/* MAIN CONTAINER */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 7rem;
+  background: #b2cdc0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px #F1E2DF;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+  /* every description and skill list section for whole body */
+  .description {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+  }
+
+  .skillList {
+    margin-top: 1rem;;
+    margin-left: 3rem;
+  }
+
+/* PROFILE PHOTO AND DESCRIPTION */
+.profile {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
 }
 
-.contact-info {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 10px;
-  align-items: center;
+  .profileContainer {
+    display: flex;
+    gap: 2rem;
+  }
+    .profileImgContainer {
+      max-width: 250px;
+      margin-right: 20px;
+    }     
+
+      .profilePicture {
+        border-radius: 50% 50%;
+        box-shadow: 5px -5px 5px #8a8788;
+        width: 100%;
+      }   
+      
+      .profileNameFirstName {
+        color: var(--secondary-color);
+        font-weight: 100;
+        font-size: clamp(0.5rem, 7vw, 4rem);
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: -0.8rem;
+      }
+      
+      .profileNameLastName {
+        color: var(--secondary-color);
+        font-weight: 700;
+        font-size: clamp(0.5rem, 13vw, 7rem);
+        text-transform: uppercase;
+        display: block;
+      }
+      /* ACCENT LETTER ONLY IN LIGHT MODE */
+      .accent {
+        color: var(--primary-color)
+      }
+      
+      .profileTitle {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--secondary-color); 
+      }
+      
+      .downloadBtn {
+        cursor: pointer;
+        display: inline;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin-top: 8rem;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 7px;
+        background-color: #FDE12D;
+        margin: 20px;
+        transition: 
+          opacity 1s,
+          color 1s,
+          background-color 0.5s;
+      }
+      
+      .downloadBtn:hover {
+        background-color: #242424;
+        color: #FDE12D;
+        opacity: 0.6;
+      }
+      
+/* LEFT COLUMN */
+.group1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.icon {
-  width: 30px;
-  margin: 15px;
-  opacity: 1;
-  transition: .5s;
-}
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 30px;
+    margin: 15px;
+    opacity: 1;
+    transition: .5s;
+  }
+  
+  a> .icon:hover {
+    opacity: .3;
+  }
+  
+  .iconProfileName {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltiptext {
+    font-size: 13px;
+    visibility: hidden;
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    left: -25px;
+    transform: translateX(-50%);
+    top: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition:
+      visibility 0.5s, 
+      opacity 0.5s,
+      background-color .5s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(76, 137, 128, .6);
+  }
 
-a> .icon:hover {
-  opacity: .3;
-}
+  .courses h2 {
+    font-size: 1.5rem;
+  }
 
-.iconProfileName {
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltiptext {
-  font-size: 13px;
-  visibility: hidden;
-  color: var(--secondary-color);
-  text-align: center;
-  border-radius: 10px;
-  padding: 5px 10px;
-  position: absolute;
-  left: -25px;
-  transform: translateX(-50%);
-  top: 20px;
-  z-index: 1;
-  opacity: 0;
-  transition:
-    visibility 0.5s, 
-    opacity 0.5s,
-    background-color .5s;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-  background-color: rgba(76, 137, 128, .6);
-}
-
-
+/* RIGHT COLUMN */
 .responsibilities {
   margin-left: 15px;
+}
+
+
+/* SEPARATOR */
+hr {
+  grid-column: 1 / -1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: none;
+  border-top: 2px solid rgba(128, 128, 128, 0.5);
 }
 
 .footer {
@@ -291,22 +285,14 @@ a> .icon:hover {
   margin-bottom: 2rem;
 }
 
-hr {
-  grid-column: 1 / -1;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 300px;
-  margin-bottom: 50px;
-  border: none;
-  border-top: 2px solid rgba(128, 128, 128, 0.5);
-}
-
-
-/* responsiveness */
-
+/* GENERAL responsiveness */
 @media only screen and (max-width: 768px) {
   
   .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
     margin: 20px;
     padding: 8rem;
     box-shadow: 0px 0px 10px 1px #5c5c5c;;
@@ -330,7 +316,7 @@ hr {
   .profileContainer {
     flex-direction: column;
   }
-  .profile, .group1, .group2, .group3, .footer {
+  .profile, .group1, .group2, .footer {
     width: 100%;
   }
   .container {

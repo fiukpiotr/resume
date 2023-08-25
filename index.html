@@ -8,6 +8,8 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- CHANGE MOOD + LANGUAGE BUTTONS -->
     <div class="switchModeBtnContainer">
       <a href="darkside.html">
         <button class="switchModeBtn">
@@ -21,13 +23,15 @@
         </button>
       </a>
     </div>
+
+    <!-- PROFILE PHOTO AND DESCRIPTION -->
     <div class="profile">
       <div class="profileContainer">
         <div class="profileImgContainer">
           <img src="images/profile-square.png" alt="Piotr Fiuk picture" class="profilePicture">
         </div>
         <div>
-          <h1 class="profileName">
+          <h1>
             <span class="profileNameFirstName">piotr</span>
             <span class="profileNameLastName"><span class="accent">f</span>iuk</span>
           </h1>
@@ -37,10 +41,12 @@
           <p class="description">
             Moja droga zawodowa obejmowała różnorodne role: projektanta ogrodów, barmana, szefa kuchni i właściciela restauracji. Teraz, jako przyszły Java developer, kieruję swoją determinację i pasję do nauki w celu osiągnięcia sukcesu w tej branży.
           </p>
-          <a href="download/cv-pl.pdf" download="CV - Piotr Fiuk.pdf" class="downloadLink"><button class="downloadBtn">pobierz PDF</button></a>                  
+          <a href="download/cv-pl.pdf" download="CV - Piotr Fiuk.pdf"><button class="downloadBtn">pobierz PDF</button></a>                  
         </div>
       </div>      
     </div>
+
+    <!-- LEFT SIDE -->
     <div class="group1">
       <div class="contact">
         <div>
@@ -67,7 +73,9 @@
               </a>
             </div>
             <div>       
-              <span class="iconProfileName">/fiukpiotr</span>
+              <a href="https://github.com/fiukpiotr" class="iconLink tooltip">
+                <span class="iconProfileName">/fiukpiotr</span>
+              </a>
             </div>
             <div>
               <a href="https://www.linkedin.com/in/fiukpiotr/" class="iconLink tooltip">
@@ -75,8 +83,10 @@
                 <span class="tooltiptext">LinkedIn</span> 
               </a>
             </div>
-            <div>       
-              <span class="iconProfileName">/fiukpiotr</span>
+            <div>
+              <a href="https://www.linkedin.com/in/fiukpiotr/" class="iconLink tooltip">
+                <span class="iconProfileName">/fiukpiotr</span>
+              </a>       
             </div>
           </div>
         </div>
@@ -120,10 +130,29 @@
           <li>angielski - B1</li>
         </ul>
       </div>
+      <div>
+        <h1>Kursy</h1>
+        <ul class="skillList description courses">
+          <li><h2>HTML & CSS Full Course - Beginner to Pro</h2>
+            (youtube/SuperSimpleDev ¬ 15h)</li>
+          <li><h2>JavaScript Full Course (2023) - Beginner to Pro </h2>
+            (youtube/SuperSimpleDev ¬ 50h)</li>
+          <li><h2>Build Web Apps with Vue JS 3 & Firebase </h2>
+            (udemy/The Net Ninja ¬ 50h)</li>
+          <li><h2>Modern JavaScript (Complete guide, from Novice to Ninja) </h2>
+            (udemy/The Net Ninja ¬ 40h)</li>
+          <li><h2>Ultimate AWS Certified Cloud Practitioner 2023</h2>
+            (udemy/Stephane Maarek ¬ 15h)</li>
+          <li><h2>Kubernetes for the Absolute Beginners - Hands-on 2023</h2>
+            (udemy/Mumshad Mannambeth, KodeKloud Training ¬ 6h)</li>
+        </ul>
+      </div>
     </div>
+
+    <!-- RIGHT SIDE -->
     <div class="group2">
       <h1>edukacja</h1>
-      <ul class="skillList edu description">
+      <ul class="skillList description">
         <li>
           <h2>infoShare Academy</h2>
           <p>Bootcamp Junior Java Developer (445h)<br>
@@ -139,6 +168,9 @@
             Projekt:<br>
             Fitly - aplikacja w Spring Framework, która indywidualnie dobiera optymalne ćwiczenia i dietę dla użytkowników, wykorzystując algorytmy dostosowane do wagi, wzrostu, wieku i poziomu aktywności fizycznej
           </p>
+          <a href="images/fitly_demo.gif">
+            <img src="images/fitly_demo.gif" width="100%">
+          </a>
         </li>
         <li>
           <h2>Sopocka Szkoła Wyższa</h2>
@@ -153,7 +185,7 @@
         <li>
           <h2>Stolarz/Kontroler jakości</h2>
           <p>Sunreef Yachts - Gdańsk</p>
-          <span class="dates">01.2021 - 05.2023</span>
+          <span>01.2021 - 05.2023</span>
           <ul class="responsibilities">
             <li>analiza jakości mebli i zgodności ze standardami firmy</li>
             <li>monitorowanie procesu produkcyjnego</li>
@@ -164,7 +196,7 @@
         <li>
           <h2>Projektant ogrodów</h2>
           <p>Freelancer - Gdańsk</p>
-          <span class="dates">04.2019 - 03.2020</span>
+          <span>04.2019 - 03.2020</span>
           <ul class="responsibilities">
             <li>tworzenie koncepcji i planów ogrodowych</li>
             <li>planowanie etapów projektowych</li>
@@ -174,7 +206,7 @@
         <li>
           <h2>Barman</h2>
           <p>Red Light Pub - Gdańsk</p>
-          <span class="dates">01.2019 - 01.2020</span>
+          <span>01.2019 - 01.2020</span>
           <ul class="responsibilities">
             <li>obsługa klienta</li>
             <li>obsługa zaopatrzenia</li>
@@ -183,7 +215,7 @@
         <li>
           <h2>Właściciel i szef kuchni</h2>
           <p>Bistro Rzecz Jasna - Gdańsk</p>
-          <span class="dates">11.2016 - 12.2018</span>
+          <span>11.2016 - 12.2018</span>
           <ul class="responsibilities">
             <li>organizowanie eventów</li>
             <li>zatrudnianie i dbanie o pracowników</li>
@@ -195,7 +227,7 @@
         <li>
           <h2>Manager i szef kuchni</h2>
           <p>Soul Kitchen International - Gdańsk</p>
-          <span class="dates">01.2016 - 12.2016</span>
+          <span>01.2016 - 12.2016</span>
           <ul class="responsibilities">
             <li>organizowanie eventów</li>
             <li>zatrudnianie i dbanie o pracowników</li>
@@ -206,10 +238,13 @@
         </li>
       </ul>
     </div>
+
+    <!-- FOOTER -->
     <div class="footer">
       <hr>
       Wyrażam zgodę na przetwarzanie danych osobowych zawartych w niniejszym dokumencie do realizacji procesów rekrutacji prowadzonych zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO). Wyrażam zgodę na przetwarzanie moich danych osobowych w zakresie przyszłych procesów rekrutacyjnych.
     </div>
   </div>
+
 </body>
 </html>
